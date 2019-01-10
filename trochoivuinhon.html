@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+    </head>
+    <body>
+        <h1 style="position:absolute; left:350px; top:175px;">Mẹ Nói Là Phải Nghe</h1>
+        <input  type="button" value="Đúng" onclick="chotien()" style="position:absolute; left:285px; top:235px;"/>
+        <input type="button" id="btnNo" value="  Không  " onmouseover="over()" style="position:absolute; left:400px; top:235px;"/>
+
+        <script type="text/javascript">
+        function chotien()
+        {
+            alert("Rồi mẹ Cho Tiền");
+        }
+        function over()
+        {
+            var x = Math.round(Math.random() * window.innerWidth);
+            var y = Math.round(Math.random() * window.innerHeight);
+            document.getElementById('btnNo').style.left = x + 'px';
+            document.getElementById('btnNo').style.top = y + 'px';
+        }
+    </script>
+    </body>
+</html>

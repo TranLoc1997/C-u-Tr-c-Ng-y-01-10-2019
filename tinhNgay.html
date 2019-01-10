@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Tính Ngày
+	</title>
+</head>
+<body>
+<input id="Ngay" type="texl" name="">
+<button onclick="TinhNgay()">Tinh Số Ngày</button>
+<h2 id="rulus"></h2>
+<script >
+	function TinhNgay() {
+		var ngaythang = parseInt(document.getElementById("Ngay").value);
+		switch(ngaythang){
+			case (1):
+			document.getElementById("rulus").innerHTML = ("Số Ngày Trông Tháng 1 Là 31 Ngày ");
+			break;
+			case (2):
+			document.getElementById("rulus").innerHTML = "Số Ngày Trông Tháng 2 Là 28 hoặc 29 Ngày ";
+			break;
+			default :
+			document.getElementById("rulus").innerHTML = "Số Ngày Trông Tháng  Là 30 Ngày " ;
+			
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	var x1=parseInt(prompt("a:",''));
+	var x2=parseInt(prompt("b:",''));
+	if  ((x1 + x2) < 4)
+	 {
+	  result = 'Below';
+	} else {
+	  result = 'Over';
+	}
+	alert(result);
+
+	var x3=parseInt(prompt("a:",''));
+	var x4=parseInt(prompt("b:",''));
+	result=  ((x3 + x4) < 4) ?'below':'Over';
+	alert(result);
+	//bai2
+
+	var login=(prompt("nhap:",''));
+	if (login == 'Employee') {
+	  message = 'Hello';
+	} else if (login == 'Director') {
+	  message = 'Greetings';
+	} else if (login == '') {
+	 message = 'No login';
+	} else {
+	  message = '';
+	}
+	alert(message);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tinh Năm Nhuận</title>
+</head>
+<body>
+ 
+ <script>
+ 	var year=parseInt(prompt("Enter a year"));
+ 	var isleapyear=false;
+ 	var isdivisibleby4 =year % 4==0;
+ 	if (isdivisibleby4) {
+ 		var isdivisibleby100=year % 100==0;
+ 		if (isdivisibleby100) {
+ 			var isdivisibleby400=year % 400==0;
+ 			if (isdivisibleby400) {
+ 				isleapyear=true;
+ 			}
+ 		} 
+ 		  else {
+ 			isleapyear=true;
+ 			}
+ 		}
+ 		if (isleapyear) {
+ 			alert(year+ "is a leep year");
+ 		} 
+ 		else{
+ 			alert(year+ "is not a leep year")
+ 	}
+ </script>
+</body>
+</html>
